@@ -1,3 +1,208 @@
-body {
-    background-color: blue;
+/*
+Almi colors 
+aqua: rgb(0, 240, 175)
+rosa: rgb(250, 25, 150)
+himmelsblå: rgb(35, 195, 255)
+gul: rgb(255, 205, 50)
+grön: rgb(0, 190, 95)
+lila: rgb(135, 10, 160)
+blå: rgb(40, 25, 255)
+orange: rgb(255, 95, 10)
+
+*/
+
+/* General styles  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: sofia-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Styles for main content  */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titleHeader {
+    height: 60px;
+}
+
+.showMenuBtn {
+    padding: 5px;
+    width: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+nav {
+    width: 80%;
+}
+
+.hide {
+    display: none;
+}
+
+.topNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.topNav li {
+    padding: 1px;
+}
+
+.links {
+    color: rgb(250, 25, 150);
+    text-decoration: none;
+}
+
+.links:hover {
+    color: rgb(135, 10, 160);
+}
+
+.banner {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applyBtn {
+    background-color: white;
+    border: 3px solid rgb(250, 25, 150);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    font-family: sofia-pro, sans-serif;
+    font-size: 1.1rem;
+}
+
+
+.applyBtn > a {
+    text-decoration: none;
+    color: rgb(250, 25, 150);
+}
+
+.applyBtn > a:hover {
+    color: rgb(135, 10, 160);
+}
+
+.interest {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.ourOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(35, 195, 255);
+    margin-top: 10px;
+}
+
+.optionText {
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+}
+
+.optionImg {
+    width: 50%;
+    padding: 5px;
+}
+
+.optionImg > img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.option:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.firstSocialProofing {
+    background-image: url("assets/färgglad-figur1_Det-jag-vill-använda-png.png");
+    background-size: cover;
+    height: auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ourProcess {
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hide {
+        display: block;
+    }
+    .showMenuBtn {
+        display: none;
+    }
+    .topNav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hide {
+        display: block;
+    }
+    .showMenuBtn {
+        display: none;
+    }
+    .topNav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
 }
