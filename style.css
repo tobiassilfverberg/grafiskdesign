@@ -40,10 +40,16 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 .titleHeader {
+  position: absolute;
+  left: 0;
+  margin-left: 15px;
   height: 60px;
 }
 
 .showMenuBtn {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
   padding: 5px;
   width: 75px;
   margin-top: 10px;
@@ -52,21 +58,22 @@ h1 h2 h3 h4 h5 h6 {
   border-radius: 15px;
 }
 
-nav {
-  width: 80%;
-}
-
 .hide {
   display: none;
 }
 
 .topNav {
+  position: absolute;
+  right: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: end;
   list-style-type: none;
   text-decoration: none;
+  top: 40px;
+  margin-right: 15px;
+
+  background-color: rgba(12, 82, 107, 0.4);
 }
 
 .topNav li {
@@ -74,7 +81,7 @@ nav {
 }
 
 .links {
-  color: rgb(250, 25, 150);
+  color: white;
   text-decoration: none;
 }
 
@@ -83,11 +90,20 @@ nav {
 }
 
 .banner {
-  width: 60%;
+  position: absolute;
+  bottom: 87px;
+  color: white;
+  width: 100%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(135, 10, 160, 0.5);
+}
+
+.landingBackground {
+  height: auto;
+  max-width: 100%;
 }
 
 .applyBtn {
