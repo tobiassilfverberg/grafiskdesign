@@ -187,6 +187,12 @@ h1 h2 h3 h4 h5 h6 {
   flex-direction: row-reverse;
 }
 
+.elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .firstSocialProofing {
   width: 90%;
   display: flex;
@@ -201,15 +207,21 @@ h1 h2 h3 h4 h5 h6 {
 
 .infoText {
   position: absolute;
-  width: 80%;
+  width: 40%;
   color: white;
   text-align: center;
 }
 
 .ourProcess {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   margin-top: 20px;
+}
+
+.ourProcess > img {
+  width: 100%;
 }
 
 .mainUSP {
@@ -221,12 +233,17 @@ h1 h2 h3 h4 h5 h6 {
   text-align: center;
 }
 
+.mainUSP > img {
+  height: auto;
+  max-width: 100%;
+}
+
 .ctaBtn {
   background-color: white;
   border: 3px solid rgb(250, 25, 150);
   border-radius: 25px;
   padding: 5px;
-  margin: 20px;
+  margin-top: 20px;
   font-family: sofia-pro, sans-serif;
   font-size: 1.1rem;
 }
@@ -254,7 +271,7 @@ h1 h2 h3 h4 h5 h6 {
   height: 30%;
   background-color: rgba(250, 25, 150, 0.3);
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .card > img {
@@ -267,10 +284,6 @@ h1 h2 h3 h4 h5 h6 {
   text-align: center;
   padding: 5px;
   margin-bottom: 5px;
-}
-
-.card:nth-child(3) {
-  margin-bottom: 0px;
 }
 
 footer {
@@ -296,6 +309,44 @@ footer {
   .links {
     padding: 5px;
   }
+  .interest {
+    width: 100%;
+  }
+  .ourOptions {
+    flex-direction: row;
+  }
+  .option {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .option:nth-child(2) {
+    flex-direction: column;
+  }
+  .optionText {
+    width: 90%
+  }
+  .optionImg {
+    width: 90%;
+  }
+  .elements {
+    flex-direction: row;
+  }
+  .firstSocialProofing {
+    width: 50%;
+  }
+  .ourProcess {
+    width: 50%;
+  }
+  .infoText {
+    width: 30%;
+  }
+  .saidAboutUs {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .card {
+    margin: 5px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -313,5 +364,43 @@ footer {
   }
   .links {
     padding: 5px;
+  }
+  .interest {
+    width: 100%;
+  }
+  .ourOptions {
+    flex-direction: row;
+  }
+  .option {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .optionText {
+    width: 90%
+  }
+  .optionImg {
+    width: 90%;
+  }
+  .option:nth-child(2) {
+    flex-direction: column;
+  }
+  .elements {
+    flex-direction: row;
+  }
+  .firstSocialProofing {
+    width: 50%;
+  }
+  .ourProcess {
+    width: 50%;
+  }
+  .infoText {
+    width: 30%;
+  }
+  .saidAboutUs {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .card {
+    margin: 5px;
   }
 }
