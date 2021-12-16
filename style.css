@@ -233,9 +233,24 @@ h1 h2 h3 h4 h5 h6 {
   text-align: center;
 }
 
-.mainUSP > img {
+.whyUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > img {
   height: auto;
   max-width: 100%;
+}
+
+.expert > img {
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
 }
 
 .ctaBtn {
@@ -287,7 +302,24 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 footer {
-  display: none;
+  margin-top: 15px;
+  background-color: black;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > a {
+  color: white;
+  text-decoration: none;
+
+}
+
+footer > a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -329,6 +361,7 @@ footer {
     width: 90%;
   }
   .elements {
+    width: 90%;
     flex-direction: row;
   }
   .firstSocialProofing {
@@ -340,12 +373,28 @@ footer {
   .infoText {
     width: 30%;
   }
+  .whyUs {
+  flex-direction: row;
+  }
+  .whyUs > img {
+    max-width: 30%;
+  }
+  .expert > img {
+    max-width: 100%;
+  }
+  .container {
+    padding: 10px;
+  }
   .saidAboutUs {
     flex-direction: row;
     margin-top: 20px;
   }
   .card {
     margin: 5px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
@@ -385,6 +434,7 @@ footer {
     flex-direction: column;
   }
   .elements {
+    width: 90%;
     flex-direction: row;
   }
   .firstSocialProofing {
@@ -396,11 +446,27 @@ footer {
   .infoText {
     width: 30%;
   }
+  .whyUs {
+    flex-direction: row;
+  }
+  .whyUs > img {
+    max-width: 30%;
+  }
+  .expert > img {
+    max-width: 100%;
+  }
+  .container {
+    padding: 10px;
+  }
   .saidAboutUs {
     flex-direction: row;
     margin-top: 20px;
   }
   .card {
     margin: 5px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
