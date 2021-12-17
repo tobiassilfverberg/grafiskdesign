@@ -315,7 +315,6 @@ footer {
 footer > a {
   color: white;
   text-decoration: none;
-
 }
 
 footer > a:hover {
@@ -325,7 +324,7 @@ footer > a:hover {
 @media screen and (max-width: 767px) {
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .hide {
     display: block;
   }
@@ -355,83 +354,10 @@ footer > a:hover {
     flex-direction: column;
   }
   .optionText {
-    width: 90%
+    width: 90%;
   }
   .optionImg {
     width: 90%;
-  }
-  .elements {
-    width: 90%;
-    flex-direction: row;
-  }
-  .firstSocialProofing {
-    width: 50%;
-  }
-  .ourProcess {
-    width: 50%;
-  }
-  .infoText {
-    width: 30%;
-  }
-  .whyUs {
-  flex-direction: row;
-  }
-  .whyUs > img {
-    max-width: 30%;
-  }
-  .expert > img {
-    max-width: 100%;
-  }
-  .container {
-    padding: 10px;
-  }
-  .saidAboutUs {
-    flex-direction: row;
-    margin-top: 20px;
-  }
-  .card {
-    margin: 5px;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hide {
-    display: block;
-  }
-  .showMenuBtn {
-    display: none;
-  }
-  .topNav {
-    position: unset;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0px;
-  }
-  .links {
-    padding: 5px;
-  }
-  .interest {
-    width: 100%;
-  }
-  .ourOptions {
-    flex-direction: row;
-  }
-  .option {
-    margin: 10px;
-    flex-direction: column;
-  }
-  .optionText {
-    width: 90%
-  }
-  .optionImg {
-    width: 90%;
-  }
-  .option:nth-child(2) {
-    flex-direction: column;
   }
   .elements {
     width: 90%;
